@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const RecaptchaComponent = ({ verified, setVerified }: any) => {

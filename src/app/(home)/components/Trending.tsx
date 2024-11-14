@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import Button from "react-bootstrap/Button";
-import Link from "next/link";
 
 const Trending = () => {
   useEffect(() => {

@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Saving the query to the database
-    const query = await Query.insertMany(data);
+    await Query.insertMany(data);
 
     return NextResponse.json(
       { success: true, message: "Query saved successfully" },
