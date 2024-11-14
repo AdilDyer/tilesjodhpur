@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavbarComponent from "@/app/components/NavbarComponent";
-import Footer from "./components/Footer";
+import NavbarComponent from "../app/components/NavbarComponent";
+import Footer from "../app/components/Footer";
 export const metadata: Metadata = {
   title: "Galaxy tiles and ceramics, Jodhpur",
   description: "Developed by Adil Dyer, NFSU",
