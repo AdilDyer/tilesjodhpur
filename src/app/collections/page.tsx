@@ -200,7 +200,7 @@ const Collections = () => {
             <div className="clearFilter">
               {" "}
               <Button variant="light">
-                <i class="fa-regular fa-circle-check"></i> &nbsp;Clear All
+                <i className="fa-regular fa-circle-check"></i> &nbsp;Clear All
                 Filters
               </Button>
             </div>
