@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import Link from "next/link";
 const CategoryCarousel = () => {
   return (
     <div className="homeSpacesCarousel">
@@ -34,7 +35,9 @@ const CategoryCarousel = () => {
             </p>
           </div>
           <div className="buttonsDiv">
-            <Button variant="dark">Explore More</Button>
+            <Link href={"/collections"}>
+              <Button variant="dark">Explore More</Button>
+            </Link>
           </div>
         </div>
         <div className="carouselCard">
@@ -54,7 +57,9 @@ const CategoryCarousel = () => {
             </p>
           </div>
           <div className="buttonsDiv">
-            <Button variant="dark">Explore More</Button>
+            <Link href={"/collections"}>
+              <Button variant="dark">Explore More</Button>
+            </Link>
           </div>
         </div>
         <div className="carouselCard">
@@ -74,7 +79,9 @@ const CategoryCarousel = () => {
             </p>
           </div>
           <div className="buttonsDiv">
-            <Button variant="dark">Explore More</Button>
+            <Link href={"/collections"}>
+              <Button variant="dark">Explore More</Button>
+            </Link>
           </div>
         </div>
         <div className="carouselCard">
@@ -94,7 +101,9 @@ const CategoryCarousel = () => {
             </p>
           </div>
           <div className="buttonsDiv">
-            <Button variant="dark">Explore More</Button>
+            <Link href={"/collections"}>
+              <Button variant="dark">Explore More</Button>
+            </Link>
           </div>
         </div>
         <div className="carouselCard">
@@ -114,7 +123,9 @@ const CategoryCarousel = () => {
             </p>
           </div>
           <div className="buttonsDiv">
-            <Button variant="dark">Explore More</Button>
+            <Link href={"/collections"}>
+              <Button variant="dark">Explore More</Button>
+            </Link>
           </div>
         </div>
         <div className="carouselCard">
@@ -134,7 +145,9 @@ const CategoryCarousel = () => {
             </p>
           </div>
           <div className="buttonsDiv">
-            <Button variant="dark">Explore More</Button>
+            <Link href={"/collections"}>
+              <Button variant="dark">Explore More</Button>
+            </Link>
           </div>
         </div>
       </div>
