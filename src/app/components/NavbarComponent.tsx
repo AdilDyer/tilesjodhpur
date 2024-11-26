@@ -4,9 +4,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
+import { signIn, useSession } from "next-auth/react";
+import { Button } from "react-bootstrap";
 
 const NavbarComponent = () => {
   const [isHovering, setIsHovering] = useState(false);
+  const { data: session } = useSession();
   return (
     <Navbar>
       <Container>
@@ -32,6 +35,15 @@ const NavbarComponent = () => {
               </svg>
             </Link>
           </Navbar.Brand>
+          {session?.user?.isAdmin && (
+            <Link href={"/admin"}>
+              <img
+                style={{ width: "50px", height: "50px" }}
+                src="https://res.cloudinary.com/ddxv0iwcs/image/upload/v1712834949/admin_rsgkmd.png"
+                alt=""
+              />
+            </Link>
+          )}
         </div>
         <div className="rightPart">
           <div className="nav-item" onMouseEnter={() => setIsHovering(true)}>
@@ -90,14 +102,20 @@ const NavbarComponent = () => {
                     <Nav.Link href="/link1">Collections</Nav.Link>
                     <Nav.Link href="/link1">Send Query</Nav.Link>
                     <Nav.Link href="/ourteam">Our Team</Nav.Link>
+                    <Button
+                      variant="outline-light"
+                      onClick={() => signIn("google")}
+                    >
+                      Admin Login
+                    </Button>
                   </div>
                 </div>
               </div>
             )}
           </div>
-          <div id="catalogueNav">
-            <Nav.Link>Catalogues</Nav.Link>
-          </div>
+          <Link id="catalogueNav" href={"/catalogue"}>
+            <div>Catalogues</div>
+          </Link>
         </div>
       </Container>
     </Navbar>

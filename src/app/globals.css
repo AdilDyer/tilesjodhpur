@@ -52,15 +52,15 @@ nav {
           top: 200%;
           right: -21rem;
           width: 60rem;
-          background-color: rgba(60, 22, 5, 0.95);
+          background-color: rgba(188, 56, 0, 0.926);
           color: white;
           border: none;
-          border-radius: 30px;
+          border-radius: 1rem;
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
           z-index: 20;
           padding: 1.5rem;
           .columns {
-            backdrop-filter: blur(24px);
+            /* backdrop-filter: blur(24px); */
             display: flex;
             justify-content: space-between;
             padding: 2rem;
@@ -103,6 +103,7 @@ nav {
         display: inline;
         background-color: black;
         color: white;
+        text-decoration: none;
       }
     }
   }
@@ -573,7 +574,6 @@ nav {
 .homeAboutUs {
   height: fit-content;
   width: 100%;
-
   padding: 1rem;
   .Container {
     width: 100%;
@@ -718,7 +718,6 @@ nav {
     width: 100%;
     height: fit-content;
     display: flex;
-
     .imgDiv {
       width: 30%;
       height: 20rem;
@@ -1080,6 +1079,401 @@ nav {
           }
         }
       }
+    }
+  }
+}
+
+.productDiv {
+  background: url("https://res.cloudinary.com/ddxv0iwcs/image/upload/v1731656448/Arc_Website_Wallpaper_v0_yaagvs.webp");
+  background-size: contain;
+  background-repeat: repeat;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  .boxContainer {
+    border: none;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    background-color: white;
+    .topPart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40rem;
+
+      .leftPhotos {
+        width: 10%;
+        height: 100%;
+        padding: 1rem;
+        .photo {
+          width: 100%;
+          height: 5rem;
+          margin: 1rem 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.149);
+          }
+        }
+      }
+      .mainPhoto {
+        width: 40%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .photoDiv {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.149);
+          }
+        }
+        button {
+          width: 80%;
+          border-radius: 1rem;
+        }
+      }
+      .rightDetails {
+        width: 50%;
+        height: 100%;
+
+        padding: 3rem;
+      }
+    }
+    .bottomPart {
+      padding: 3rem;
+      padding-top: 0;
+      .tools {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+.admin {
+  display: flex;
+  .leftPart {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .bottomMenu {
+      margin: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      button {
+        margin: 1rem 0;
+        width: 12rem;
+        text-align: start;
+      }
+    }
+  }
+  .rightPart {
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(203, 219, 255); */
+    .queryDiv {
+      padding: 7rem;
+      h1 {
+        text-align: center;
+      }
+      .queries {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .query {
+          width: 25rem;
+          background-color: white;
+          border-radius: 1rem;
+          padding: 1rem;
+          margin: 1rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.149);
+        }
+      }
+    }
+    .catalogueDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 7rem 0;
+      min-height: 100vh;
+      h1 {
+        margin: 3rem;
+      }
+      .newCatalogueUploadDiv {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        input,
+        button {
+          height: 3rem;
+          width: fit-content;
+        }
+        input {
+          width: 30rem;
+        }
+      }
+      .card {
+        margin: 2rem;
+        width: 70%;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.149);
+        overflow: hidden;
+        border: 0;
+        img {
+          height: 20rem;
+          width: 100%;
+          object-fit: cover;
+        }
+        h4 {
+          text-align: center;
+        }
+        .btnsDiv {
+          padding: 1rem;
+          display: flex;
+          gap: 2rem;
+        }
+      }
+    }
+    .productsDiv {
+      padding: 2rem;
+      padding-top: 7rem;
+      .heading {
+        display: flex;
+        justify-content: space-between;
+      }
+      table {
+        tr {
+          font-size: 0.7rem;
+          th {
+            text-align: center;
+            vertical-align: middle;
+            select {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.addProductDiv {
+  padding: 7rem;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  .detailsFillingDiv {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .submitBtn {
+      width: 100%;
+    }
+  }
+}
+
+.catalogue {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  font-family: "Poppins";
+  padding-top: 7rem;
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem;
+  }
+  .card {
+    width: 30%;
+    margin: 1rem;
+    border-radius: 0rem;
+    overflow: hidden;
+    border: 0;
+    transition: 0.3s all ease-in-out;
+    .imgPart {
+      height: 40%;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .textPart {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-weight: 600;
+      }
+    }
+  }
+  .card:hover {
+    box-shadow: 0 0 20px rgba(69, 69, 69, 0.135);
+    box-shadow: 0 0 20px rgba(78, 81, 255, 0.135);
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    width: 90%;
+    left: 6%;
+    .dropdown-menu {
+      right: 0;
+      width: 100%;
+      position: relative;
+      .columns {
+        width: 50%;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .homeLandingBanner {
+    .imgDiv {
+      margin: 3rem 0;
+    }
+    .textDiv {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .homeCustomerVideosCarousel {
+    .textDiv {
+      padding: 2rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .carouselDiv {
+      flex-direction: column;
+    }
+    .shareFeedbackDiv {
+      padding: 2rem;
+    }
+  }
+  .homeSpacesCarousel {
+    .textDiv {
+      padding: 2rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .homeStateOfTheArtDiv {
+    flex-direction: column;
+    .leftPart {
+      position: static;
+      .heading {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  .homeTrending {
+    .topPart {
+      padding: 1rem;
+    }
+  }
+  .homeFinishesDiv {
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 25rem;
+    .leftPart {
+      padding: 1rem;
+      width: 100%;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .rightPart {
+      padding: 1rem;
+      width: 100%;
+      height: 20rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .homeWhereToBuy {
+    margin: 1rem;
+    .socials {
+      flex-wrap: wrap;
+    }
+  }
+  .homeAboutUs {
+    .Container {
+      padding: 0;
+      .ourMission {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        .leftTextPart {
+          width: 100%;
+          margin-bottom: 10rem;
+        }
+        .rightImagePart {
+          width: 100%;
+          height: 20rem;
+          padding: 0;
+        }
+      }
+      .testimonials {
+        margin-top: 25rem;
+        padding: 2rem;
+      }
+    }
+  }
+  .homeDownloadCatalogue {
+    flex-direction: column;
+    padding: 2rem;
+    .leftPart,
+    .rightPart {
+      width: 100%;
+    }
+  }
+  .footer {
+    padding: 1rem;
+    .line1 {
+      flex-direction: column;
+      .imgDiv {
+        width: 100%;
+      }
+      .columns {
+        width: 100%;
+        columns: 2;
+        flex-wrap: wrap;
+        padding: 1rem;
+        align-items: start;
+        text-align: start;
+      }
+    }
+    .socials {
+      flex-wrap: wrap;
     }
   }
 }

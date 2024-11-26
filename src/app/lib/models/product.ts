@@ -19,9 +19,6 @@ const productSchema = new mongoose.Schema(
     brand: {
       type: String,
     },
-    stock: {
-      type: Boolean,
-    },
     colors: {
       type: [String],
     },
@@ -40,7 +37,9 @@ const productSchema = new mongoose.Schema(
     applicationAreas: {
       type: [String],
     },
-    isPremium: {},
+    isPremium: {
+      type: Boolean,
+    },
   },
   { timestamps: true }
 );

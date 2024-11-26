@@ -53,6 +53,7 @@ const Contact = () => {
       alert("Please complete the CAPTCHA to proceed.");
     }
     setSubmitting(false);
+    setVerified(false);
   };
   return (
     <div className="contactus">

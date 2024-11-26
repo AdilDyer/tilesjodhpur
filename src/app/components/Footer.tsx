@@ -8,7 +8,7 @@ const Footer = () => {
           <img
             src="https://t4.ftcdn.net/jpg/04/53/48/35/360_F_453483571_3f042fk3eWCrmw05WflZyIe60Wv20XiM.jpg"
             alt=""
-          />
+          /> 
         </div>
         <div className="columns">
           <div className="col">
